@@ -15,6 +15,11 @@ export default function loginPage() {
                         placeholder="Username"
                         required
                         />
+                    <label htmlFor="password">Password</label>
+                    <input type="password" id="userPassword"/>
+                    <button type="submit" className="btn btn-primary">
+                        Sign In
+                    </button>
                 </form>
             </main>
         </div>
