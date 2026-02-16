@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Button from '../components/Button';
 import InputBox from '../components/InputBox';
 import styles from '../styles/auth.module.css';
-import buttonStyles from '../styles/button.module.css'
 
 const GoogleIcon = () => (
     <svg className={styles.googleIcon} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
