@@ -1,0 +1,9 @@
+{
+    "loginStreak" : "integer",
+    "currentAnswerStreak" : "integer",
+    "maxAnswerStreak" : "integer",
+    "timeSpent" : "integer",
+    "xp" : "integer",
+    "videosWatched" : "integer",
+    "newWords" : "integer"
+}

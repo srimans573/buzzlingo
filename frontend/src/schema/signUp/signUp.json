@@ -1,0 +1,6 @@
+{
+    "userName" : "string",
+    "email": "string, email",
+    "password": "string",
+    "dateCreated": "dateObject"
+}
