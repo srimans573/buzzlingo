@@ -71,7 +71,7 @@ export default function Auth() {
                 </p>
             </div>
 
-            <p className={styles.footer}>Tiklingo © 2026</p>
+            <p className={styles.footer}>buzzlingo © 2026</p>
         </div>
     );
 }
