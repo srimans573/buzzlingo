@@ -25,20 +25,5 @@ export default function SidebarButton({
                     <span className="sidebarButtonText">{label}</span>
             </div>
         </NavLink>
-        // <div
-        //     className={styles.sidebarButton}
-        //     onClick={onClick}
-        //     style={{
-        //         cursor: "pointer"
-        //     }}>
-        //         <NavLink
-        //             link={link}
-        //             className={({ isActive})} =>
-        //                 isActive ? "sidebarButton active" : "sidebarButton"
-        //         }
-        //     ></div>
-        //     <h3>{label}</h3>
-        //     </NavLink>
-        // </div>
     );
 }
