@@ -1,22 +1,21 @@
 import styles from "../styles/sidebar.module.css"
-import { NavLink, Link } from "react-router-dom";
-import { useNavigate, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 export default function SidebarButton({
     label,
     icon,
-    onClick,
     variant = "primary",
-    link,
+    link = '/home', // if a link isn't added, make the sidebar button automatically default to home
+    theme, 
 }) {
-    let navigate = useNavigate({ link });
+
+    console.log("button for " + {label} + " pressed") // Debug statement :)
     return (
         <Link to={ link }>
         <div className = {styles.sidebarButton}>
-            <button onClick={() => navigate}>
-                <span>{icon}</span>
-                <span>{label}</span>
-            </button>
+            <span className = {styles.sidebarButtonIcon}>{icon}</span>
+            <span className = {styles.sidebarButtontext}>{label}</span>
         </div>
         </Link>
     );
