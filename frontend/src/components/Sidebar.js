@@ -8,10 +8,10 @@ export default function Sidebar({
     return (
         <div className={styles.sidebarContainer}>
             <SidebarLogo />
-            <SidebarButton label="HOME" link="/Home" />
-            <SidebarButton label="REVIEW" link="/Home" />
-            <SidebarButton label="PROFILE" link="/Profile" />
-            <SidebarButton label="SETTINGS" link="/Settings"/>
+            <SidebarButton label="HOME" link='./home' />
+            <SidebarButton label="REVIEW" link="./home" />
+            <SidebarButton label="PROFILE" link='/profile' />
+            <SidebarButton label="SETTINGS" link='/settings'/>
             <SidebarButton label="LOG OUT" />
         </div>
     )
