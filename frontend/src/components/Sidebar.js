@@ -25,7 +25,10 @@ export default function Sidebar({
             <SidebarButton label="REVIEW" isSelected={reviewButtonSelected} link="/home" icon = {<StarIcon />} />
             <SidebarButton label="PROFILE" isSelected={profileButtonSelected} link='/profile' icon = {<ProfileIcon />} />
             <SidebarButton label="SETTINGS" isSelected={settingsButtonSelected} link='/settings' icon = {<SettingsIcon />} />
-            <SidebarButton label="LOG OUT" isSelected={logoutButtonSelected} link='/home' icon = {<LogoutIcon/>} />
+            <div className={styles.sidebarSpacer}>
+                <p></p>
+            </div>
+            <SidebarButton label="LOG OUT" isSelected={logoutButtonSelected} theme="logout" link='/home' icon = {<LogoutIcon/>} />
         </div>
     )
 }

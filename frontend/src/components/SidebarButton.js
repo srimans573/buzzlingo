@@ -17,6 +17,9 @@ export default function SidebarButton({
     } else {
         buttonStyle = styles.sidebarButton;
     }
+    if (theme==="logout") {
+        buttonStyle = styles.sidebarButtonLogOut;
+    }
     console.log("button for " + {label} + " pressed") // Debug statement :)
     return (
         <Link to={ link }>
