@@ -8,12 +8,19 @@ export default function SidebarButton({
     variant = "primary",
     link = '/home', // if a link isn't added, make the sidebar button automatically default to home
     theme, 
+    isSelected = false, 
 }) {
 
+    let buttonStyle;
+    if (isSelected) {
+        buttonStyle = styles.sidebarButtonActive;
+    } else {
+        buttonStyle = styles.sidebarButton;
+    }
     console.log("button for " + {label} + " pressed") // Debug statement :)
     return (
         <Link to={ link }>
-        <div className = {styles.sidebarButton}>
+        <div className = {buttonStyle}>
             <span className = {styles.sidebarButtonIcon}>{icon}</span>
             <span className = {styles.sidebarButtontext}><p>{label}</p></span>
         </div>

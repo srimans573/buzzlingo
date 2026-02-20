@@ -7,18 +7,25 @@ import { ReactComponent as ProfileIcon } from "../assets/user_icon.svg"
 import { ReactComponent as SettingsIcon } from "../assets/settings_icon.svg"
 import { ReactComponent as LogoutIcon } from "../assets/logout_icon.svg"
 
+
 export default function Sidebar({
     onClick,
     theme, 
+    homeButtonSelected = false,
+    reviewButtonSelected = false,
+    profileButtonSelected = false,
+    settingsButtonSelected = false,
+    logoutButtonSelected = false,
 }) {
+
     return (
         <div className={styles.sidebarContainer}>
             <SidebarLogo />
-            <SidebarButton label="HOME" link='/home' icon = <HomeIcon /> />
-            <SidebarButton label="REVIEW" link="/home" icon = <StarIcon /> />
-            <SidebarButton label="PROFILE" link='/profile' icon = <ProfileIcon /> />
-            <SidebarButton label="SETTINGS" link='/settings' icon = <SettingsIcon /> />
-            <SidebarButton label="LOG OUT" link='/home' icon = <LogoutIcon/> />
+            <SidebarButton label="HOME" isSelected={homeButtonSelected} link='/home' icon = {<HomeIcon />} />
+            <SidebarButton label="REVIEW" isSelected={reviewButtonSelected} link="/home" icon = {<StarIcon />} />
+            <SidebarButton label="PROFILE" isSelected={profileButtonSelected} link='/profile' icon = {<ProfileIcon />} />
+            <SidebarButton label="SETTINGS" isSelected={settingsButtonSelected} link='/settings' icon = {<SettingsIcon />} />
+            <SidebarButton label="LOG OUT" isSelected={logoutButtonSelected} link='/home' icon = {<LogoutIcon/>} />
         </div>
     )
 }

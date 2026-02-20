@@ -4,7 +4,7 @@ import styles from '../styles/sidebar.module.css'
 export default function Settings() {
     return (
         <div className={styles.sidebarScreenSetting}>
-            <Sidebar />
+            <Sidebar settingsButtonSelected={true}/>
             <h1>Settings</h1>
         </div>
     );
