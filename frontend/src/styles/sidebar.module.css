@@ -10,6 +10,7 @@ a {
 /* This CSS can be applied to a div in order to make it so that it occupies the space of the sidebar */
 .splitSpacer {
     width: 295px;
+    flex-shrink: 0;
 }
 
 .sidebarSpacer {
