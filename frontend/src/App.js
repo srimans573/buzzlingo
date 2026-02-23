@@ -4,6 +4,7 @@ import Auth from './pages/Auth';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
+import Review from './pages/Review';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/review" element={<Review />} />
       </Routes>
     </div>
   );

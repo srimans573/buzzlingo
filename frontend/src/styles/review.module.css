@@ -1,0 +1,148 @@
+.title {
+    font-size: 77px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 30px;
+    color: #244870;
+
+
+}
+
+.subtitle {
+    font-size: 23px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #757575;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: #fffef8;
+  box-sizing: border-box;
+}
+
+.reviewBox {
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+.statBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 289px;
+  height: 114px;
+  background: white;
+  border: 2px solid rgba(125, 125, 125, 0.3);
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statLabel {
+  color: #7d7d7d;
+  font-size: 23px;
+  letter-spacing: 1.84px;
+  margin: 0;
+}
+
+.statValue {
+  color: #244870;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  margin: 8px 0 0 0;
+}
+
+.main {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+
+.statsRow {
+  display:flex;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sessions {
+  margin-top: 28px;
+  display:flex;
+  flex-direction:column;
+  gap: 24px;
+  align-items: center;
+}
+
+.sessionCard {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 31px;
+  padding: 24px;
+  height: 195px;
+  box-sizing: border-box;
+  width: 808.552px;
+}
+
+.sessionInfo {
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+
+.sessionTitle {
+  color: #244870;
+  font-size: 40px;
+  margin: 0;
+}
+
+.sessionMeta {
+  font-size: 23px;
+  color: #000;
+  margin: 0;
+}
+
+.sessionImage {
+  width: 248px;
+  height: 73px;
+  object-fit: cover;
+}
+
+.sessionAction {
+  width: 248px;
+  height: 73px;
+  border-radius: 15px;
+  background: #e7bf21;
+}
+
+/* Center text inside the yellow action box */
+.sessionAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #244870;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
