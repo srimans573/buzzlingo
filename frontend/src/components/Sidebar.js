@@ -28,7 +28,7 @@ export default function Sidebar({
             <div className={styles.sidebarSpacer}>
                 <p></p>
             </div>
-            <SidebarButton label="LOG OUT" isSelected={logoutButtonSelected} theme="logout" link='/home' icon = {<LogoutIcon/>} />
+            <SidebarButton label="LOG OUT" isSelected={logoutButtonSelected} theme="logout" link='/auth' icon = {<LogoutIcon/>} />
         </div>
     )
 }
